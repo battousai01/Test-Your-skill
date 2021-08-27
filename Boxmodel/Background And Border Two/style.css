@@ -1,0 +1,44 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  .box {
+    width: 300px;
+    padding: 0.5em;
+    border: 5px solid lightblue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+    /*background-image: url(https://github.com/mdn/css-examples/blob/master/learn/tasks/backgrounds/star.png?raw=true);*/
+    background-repeat: no-repeat;
+    background-position: right 100% bottom 44% ;
+}
+h2{
+    text-align: center;
+    /*
+    background-image: url(https://github.com/mdn/css-examples/blob/master/learn/tasks/backgrounds/star.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://github.com/mdn/css-examples/blob/master/learn/tasks/backgrounds/star.png?raw=true);
+    background-repeat: repeat-y;
+    background-position: right center;
+    */
+    background:url(https://github.com/mdn/css-examples/blob/master/learn/tasks/backgrounds/star.png?raw=true) 
+    no-repeat left center,
+    url(https://github.com/mdn/css-examples/blob/master/learn/tasks/backgrounds/star.png?raw=true) 
+    repeat-y right center;
+    border: 1px solid lightblue;
+
+    /*
+        the background control from line25 - line30 not work
+
+        Note    การใส่รูปใน h2 จะทำให้รูปอยู่ในตำแหน่งที่ต้องการง่ายกว่าการใส่ใน class box
+                
+     */
+}
