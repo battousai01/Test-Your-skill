@@ -1,0 +1,104 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  @font-face {
+      font-family: sf;
+      src: url(slab-serif/slabserifhplhs.ttf);
+  }
+  html{
+      font-size: 10px;
+      font-family: serif;
+  }
+  h1{
+    font-family: sans-serif;  
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  body{
+      font-family: sans-serif;
+      line-height: 1.6;
+      font-size: 1.4rem;
+  }
+
+  section p a::after{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    content: '';
+    background: url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-text/typesetting-a-homepage-start/external-link-52.png) no-repeat 0 0;
+    background-size: 100%;
+}
+  a{
+      color: brown;
+      
+  }
+  a:hover{
+      text-decoration: none;
+  }
+  a:focus{
+      outline: none;
+  }
+  a:active{
+      color:lemonchiffon;
+  }
+
+  /*right link*/
+  nav ul li a{
+    display: block;
+    text-decoration: none; 
+    border: 2px solid brown;
+    text-align: center; 
+    padding: 1.4rem;
+    margin: 1.4rem;
+  }
+  nav ul li{
+      list-style-type: none;
+  }
